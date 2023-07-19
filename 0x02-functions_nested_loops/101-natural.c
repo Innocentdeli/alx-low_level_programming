@@ -16,11 +16,11 @@ int main(void)
 	{
 		if ((m % 3) == 0)
 		{
-			i += m;
+			i = i +  m;
 		}
 		else if ((m % 5) == 0)
 		{
-			j += m;
+			j = j + m
 		}
 	}
 	k = i + j;
