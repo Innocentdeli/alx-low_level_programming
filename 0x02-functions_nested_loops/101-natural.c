@@ -5,16 +5,25 @@
  */
 int main(void)
 {
-	int i, z = 0;
+	unsigned long int i, j, k;
+	int m;
 
-	while (i < 1024)
+	i = 0;
+	j = 0;
+	k = 0;
+
+	for (m = 0; m < 1024; m++)
 	{
-		if ((i % 3 == 0) || (i % 5 == 0))
+		if ((m % 3) == 0)
 		{
-			z += 1;
+			i += m;
 		}
-		i++;
+		else if ((m % 5) == 0)
+		{
+			j += m;
+		}
 	}
-	printf("%d\n", z);
+	k = i + j;
+	printf("%lu\n", z);
 	return (0);
 }
