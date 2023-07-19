@@ -5,25 +5,16 @@
  */
 int main(void)
 {
-	unsigned long int i, j, k;
-	int m;
+	int sum;
+	int i;
 
-	i = 0;
-	j = 0;
-	k = 0;
-
-	for (m = 0; m < 1024; m++)
+	sum = 0;
+	for (i = 0; i < 1024)
 	{
-		if ((m % 3) == 0)
+		if ((i % 3) == 0 || (i % 5) == 0)
 		{
-			i = i +  m;
-		}
-		else if ((m % 5) == 0)
-		{
-			j = j + m
+			sum = sum + i;
 		}
 	}
-	k = i + j;
-	printf("%lu\n", z);
-	return (0);
+	printf("%f\n", sum);
 }
