@@ -1,12 +1,11 @@
 #include "main.h"
-/**
- * _puts - Program prints a string
- * @str: The string to be printed
- * _putchar prints a new line
- */
-void _puts(char *str)
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+void _puts(char *s)
 {
-	while (*str)
-		_putchar(*str++);
-	_putchar('\n');
+	puts(s);
 }
+
