@@ -5,7 +5,7 @@
  * @head: linked list to search for head
  *
  * Return: address of the node
- * */
+ **/
 listint_t *find_listint_loop(listint_t *head)
 {
 	listint_t *slow = head;
